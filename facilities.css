@@ -150,34 +150,39 @@
 	line-height: 3rem;
 	width: 70%;
 	margin-left: auto;
-	margin-right: auto;
 
+	margin-right: auto;
+	text-align: justify;
 	font-size: 20px;
 }
 .container-card {
 	position: relative;
 	height: 40vh;
 	background-color: rgb(240, 240, 240);
-	max-height: 350px;
+	/* max-height: 350px; */
+	display: flex;
+	align-items: center;
+
 }
 .swiper {
 	position: absolute;
-	/* padding-top: 5rem; */
 	left: 35% !important;
-	top: 20%;
 	width: 28%;
-	margin-left: 1.5rem;
-
+	margin-left: 1rem;
 	border-radius: 5%;
 }
 
+
+.swiper-wrapper {
+	display: flex;
+	align-items: center;
+}
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
 	width: 140px !important;
 	border-radius: 50%;
 	height: 140px !important;
-	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -200,12 +205,12 @@
 .swiper-button-next {
 	color: #2c394b;
 	right: 30%;
-	top: 45%;
+	/* top: 45%; */
 }
 .swiper-button-prev {
 	color: #2c394b;
 	left: 30%;
-	top: 45%;
+	/* top: 45%; */
 }
 .swiper-button-prev,
 .swiper-button-next {
@@ -224,7 +229,6 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-	/* font-family: swiper-icons; */
 	font-size: var(--swiper-navigation-size);
 	text-transform: none !important;
 	letter-spacing: 0;
@@ -232,17 +236,7 @@
 	font-variant: initial;
 	line-height: 1;
 }
-/* .swiper-slide {
-	background-color: #2C394B;
-	height: 150px;
-	width: 150px;
-	border-radius: 50%;
-	color: #edbd15;
-	text-align: center;
-	padding: 4rem 0rem 2rem 0rem;
-	margin-left: 1rem;
 
-} */
 @keyframes cardanimation {
 	0% {
 		transform: translateY(80px);
@@ -253,11 +247,10 @@
 		opacity: 1;
 	}
 }
-
+/* 
 @media (max-height: 768px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 36.5% !important;
 		width: 27%;
 		height: 30vh;
@@ -273,11 +266,10 @@
 	.swiper-button-prev {
 		top: 47%;
 	}
-}
+} */
 @media (max-width: 1880px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 35.5% !important;
 		width: 29%;
 		height: 30vh;
@@ -288,11 +280,16 @@
 		width: 140px !important;
 		height: 140px !important;
 	}
+	.swiper-button-next {
+		right: 29%;
+	}
+	.swiper-button-prev {
+		left: 29%;
+	}
 }
 @media (max-width: 1855px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 35% !important;
 		width: 30%;
 		height: 30vh;
@@ -306,7 +303,6 @@
 @media (max-width: 1820px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		margin-left: 0rem !important;
 		margin-right: 7rem !important;
 	}
@@ -318,24 +314,22 @@
 @media (max-width: 1780px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 34.5 !important;
 		width: 31%;
 		height: 30vh;
 	}
 	.swiper-button-next {
-		top: 47%;
+		/* top: 47%; */
 		right: 25%;
 	}
 	.swiper-button-prev {
-		top: 47%;
+		/* top: 47%; */
 		left: 25%;
 	}
 }
 @media (max-width: 1755px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		margin-left: -1rem !important;
 	}
 }
@@ -343,43 +337,40 @@
 @media (max-width: 1735px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 34% !important;
 		width: 32%;
 		height: 30vh;
 		margin-left: 0.5rem !important;
 	}
 	.swiper-button-next {
-		top: 47%;
+		/* top: 47%; */
 		right: 25%;
 	}
 	.swiper-button-prev {
-		top: 47%;
+		/* top: 47%; */
 		left: 25%;
 	}
 }
 @media (max-width: 1710px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 34% !important;
 		width: 32%;
 		height: 30vh;
 		margin-left: 0rem !important;
 	}
 	.swiper-button-next {
-		top: 47%;
+		/* top: 47%; */
 		right: 25%;
 	}
 	.swiper-button-prev {
-		top: 47%;
+		/* top: 47%; */
 		left: 25%;
 	}
 }
 @media (max-width: 1680px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 33.5% !important;
 		width: 33%;
 		height: 30vh;
@@ -388,7 +379,6 @@
 @media (max-width: 1630px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 33% !important;
 		width: 34%;
 		height: 30vh;
@@ -397,7 +387,6 @@
 @media (max-width: 1580px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 32.5 !important;
 		width: 35%;
 		height: 30vh;
@@ -411,7 +400,6 @@
 @media (max-width: 1540px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 32% !important;
 		margin-left: 0rem !important;
 		width: 36%;
@@ -425,7 +413,6 @@
 @media (max-width: 1500px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 31.5% !important;
 		width: 37%;
 		height: 30vh;
@@ -435,7 +422,6 @@
 @media (max-width: 1460px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 31% !important;
 		width: 38%;
 		height: 30vh;
@@ -444,7 +430,6 @@
 @media (max-width: 1420px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 30.5% !important;
 		width: 39%;
 		height: 30vh;
@@ -452,12 +437,12 @@
 	.swiper-button-next {
 		color: #2c394b;
 		right: 22%;
-		top: 52%;
+		/* top: 52%; */
 	}
 	.swiper-button-prev {
 		color: #2c394b;
 		left: 22%;
-		top: 52%;
+		/* top: 52%; */
 	}
 	.swiper-button-prev,
 	.swiper-button-next {
@@ -468,23 +453,22 @@
 }
 
 @media (max-width: 1380px) {
-	.container-card {
-		max-height: 280px;
-	}
+	/* .container-card {
+		 max-height: 280px; 
+	} */
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 30% !important;
 		margin-left: 1rem !important;
 		width: 38%;
 		height: 30vh;
 	}
 	.swiper-button-next {
-		top: 52%;
+		/* top: 52%; */
 		right: 22%;
 	}
 	.swiper-button-prev {
-		top: 52%;
+		/* top: 52%; */
 		left: 22%;
 	}
 	.swiper-slide {
@@ -514,13 +498,11 @@
 	}
 }
 @media (max-width: 1340px) {
-	.container-card {
+	/* .container-card {
 		max-height: 280px;
-	}
+	} */
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
-		left: 30% !important;
 		width: 39%;
 		height: 30vh;
 	}
@@ -543,36 +525,34 @@
 	}
 
 	.swiper-button-next {
-		top: 52%;
+		/* top: 52%; */
 		right: 21%;
 	}
 	.swiper-button-prev {
-		top: 52%;
+		/* top: 52%; */
 		left: 21%;
 	}
 }
 @media (max-width: 1310px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 31% !important;
 		margin-left: -0.5rem !important;
 		width: 40%;
 		height: 30vh;
 	}
 	.swiper-button-next {
-		top: 52%;
+		/* top: 52%; */
 		right: 20%;
 	}
 	.swiper-button-prev {
-		top: 52%;
+		/* top: 52%; */
 		left: 20%;
 	}
 }
 @media (max-width: 1275px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 30.5 !important;
 		width: 41%;
 		height: 30vh;
@@ -582,7 +562,6 @@
 @media (max-width: 1245px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 31.5% !important;
 		width: 42%;
 		height: 30vh;
@@ -592,7 +571,6 @@
 @media (max-width: 1220px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 31.5% !important;
 		width: 43%;
 		height: 30vh;
@@ -601,7 +579,6 @@
 @media (max-width: 1200px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 31% !important;
 		width: 44%;
 		height: 30vh;
@@ -610,7 +587,6 @@
 @media (max-width: 1185px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 30.5% !important;
 		width: 44.5%;
 	}
@@ -618,7 +594,6 @@
 @media (max-width: 1150px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 30% !important;
 		width: 46%;
 		height: 30vh;
@@ -627,7 +602,6 @@
 @media (max-width: 1125px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 29.5% !important;
 		width: 47%;
 		height: 30vh;
@@ -637,7 +611,6 @@
 @media (max-width: 1095px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 29% !important;
 		width: 48%;
 		height: 30vh;
@@ -652,7 +625,6 @@
 @media (max-width: 1075px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 28.5% !important;
 		width: 49%;
 		height: 30vh;
@@ -662,7 +634,6 @@
 @media (max-width: 1050px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 28% !important;
 		width: 47% !important;
 		height: 30vh;
@@ -681,13 +652,12 @@
 }
 @media (max-width: 1025px) and (min-width: 1020px) {
 	.swiper {
-		margin-left: -2.5rem !important;
+		margin-left: -1.5rem !important;
 	}
 }
 @media (max-width: 1020px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 27.5% !important;
 		width: 49% !important;
 		height: 30vh;
@@ -696,7 +666,6 @@
 @media (max-width: 1000px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 27% !important;
 		width: 50% !important;
 		height: 30vh;
@@ -709,7 +678,6 @@
 @media (max-width: 980px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 26.5% !important;
 		width: 51% !important;
 		height: 30vh;
@@ -718,7 +686,6 @@
 @media (max-width: 960px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 25.5% !important;
 		width: 52% !important;
 		height: 30vh;
@@ -734,7 +701,6 @@
 @media (max-width: 925px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 24.5% !important;
 		width: 53% !important;
 		height: 30vh;
@@ -743,7 +709,6 @@
 @media (max-width: 910px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 24.5% !important;
 		width: 54% !important;
 		height: 30vh;
@@ -752,7 +717,6 @@
 @media (max-width: 890px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 24% !important;
 		width: 55% !important;
 		height: 30vh;
@@ -762,7 +726,6 @@
 @media (max-width: 875px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 23% !important;
 		width: 56% !important;
 		height: 30vh;
@@ -778,7 +741,6 @@
 @media (max-width: 860px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 22% !important;
 		width: 58% !important;
 		height: 30vh;
@@ -788,17 +750,14 @@
 @media (max-width: 835px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
-		/* left: 5px !important; */
 		width: 60% !important;
 		height: 30vh;
+		margin-left: -1.2rem !important;
 	}
 }
 @media (max-width: 805px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
-		/* left: 5px !important; */
 		width: 62% !important;
 		height: 30vh;
 		margin-left: -1.5rem !important;
@@ -813,7 +772,6 @@
 @media (max-width: 780px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 20% !important;
 		width: 64% !important;
 		height: 30vh;
@@ -822,14 +780,45 @@
 @media (max-width: 768px) {
 	.title {
 		padding: 4rem 6rem 4rem 6rem;
+		margin-top: 3.5rem;
 	}
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
+
 		left: 19.5% !important;
 		width: 61% !important;
 		height: 30vh;
 		margin-left: 0rem !important;
+	}
+	.container-card::after {
+		content: url('');
+		background-color: rgb(245, 245, 245);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+		right: .8rem;
+		width: 2rem;
+		height: 2rem;
+		z-index: 3;
+		font-weight: bold;
+		font-size: 20px;
+		opacity: .5;
+	}
+	.container-card::before {
+		opacity: .5;
+		content: '<';
+		font-size: 20px;
+		font-weight: bold;
+		background-color: rgb(245, 245, 245);
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		left: 1rem;
+		width: 2rem;
+		height: 2rem;
+		z-index: 3;
 	}
 	.swiper-slide {
 		height: 110px !important;
@@ -846,7 +835,6 @@
 @media (max-width: 745px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 18.5% !important;
 		width: 63% !important;
 		height: 30vh;
@@ -855,7 +843,6 @@
 @media (max-width: 720px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 17.5% !important;
 		width: 65% !important;
 		height: 30vh;
@@ -865,7 +852,6 @@
 @media (max-width: 700px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 16.5% !important;
 		width: 67% !important;
 		height: 30vh;
@@ -879,7 +865,6 @@
 	}
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 20% !important;
 		width: 60% !important;
 		height: 30vh;
@@ -889,16 +874,15 @@
 		width: 90px !important;
 		height: 90px !important;
 	}
-	.swiper-button-next,
+	/* .swiper-button-next,
 	.swiper-button-prev {
-		top: 46%;
-	}
-}
+		 top: 46%; 
+	}*/
+} 
 
 @media (max-width: 655px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 19% !important;
 		width: 62% !important;
 		height: 30vh;
@@ -908,7 +892,6 @@
 @media (max-width: 635px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 19% !important;
 		width: 64% !important;
 		height: 30vh;
@@ -918,7 +901,6 @@
 	@media (max-width: 615px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 17.5% !important;
 			width: 66% !important;
 			height: 30vh;
@@ -928,7 +910,6 @@
 	@media (max-width: 600px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 16.5% !important;
 			width: 67% !important;
 			height: 30vh;
@@ -937,7 +918,6 @@
 	@media (max-width: 590px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 16.5% !important;
 			width: 69% !important;
 			height: 30vh;
@@ -954,7 +934,6 @@
 	@media (max-width: 560px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 15% !important;
 			width: 71% !important;
 			height: 30vh;
@@ -969,7 +948,6 @@
 	@media (max-width: 550px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 14% !important;
 			width: 73% !important;
 			height: 30vh;
@@ -978,23 +956,22 @@
 	@media (max-width: 535px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 19% !important;
 			width: 63% !important;
 			height: 30vh;
+			/* top: 30%; */
 		}
 		.swiper-slide {
 			margin: 10px;
 		}
-		.swiper-button-next,
+		/* .swiper-button-next,
 		.swiper-button-prev {
 			top: 43%;
-		}
+		} */
 	}
 	@media (max-width: 525px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 18% !important;
 			width: 65% !important;
 			height: 30vh;
@@ -1003,7 +980,6 @@
 	@media (max-width: 515px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 17.5% !important;
 			width: 66% !important;
 			height: 30vh;
@@ -1018,7 +994,6 @@
 		}
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 20% !important;
 			width: 66.5% !important;
 			height: 30vh;
@@ -1027,15 +1002,14 @@
 		.swiper-slide {
 			font-size: 12px;
 		}
-		.swiper-button-next,
+		/* .swiper-button-next,
 		.swiper-button-prev {
 			top: 40%;
-		}
+		} */
 	}
 	@media (max-width: 495px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 20% !important;
 			width: 67% !important;
 			height: 30vh;
@@ -1045,7 +1019,6 @@
 	@media (max-width: 490px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 20% !important;
 			width: 68% !important;
 			height: 30vh;
@@ -1056,7 +1029,6 @@
 	@media (max-width: 480px) {
 		.swiper {
 			position: absolute;
-			/* padding-top: 5rem; */
 			left: 19% !important;
 			width: 70% !important;
 			height: 30vh;
@@ -1067,7 +1039,6 @@
 @media (max-width: 470px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 18% !important;
 		width: 71% !important;
 		height: 30vh;
@@ -1083,7 +1054,6 @@
 	}
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 17% !important;
 		width: 73% !important;
 		height: 30vh;
@@ -1093,7 +1063,6 @@
 @media (max-width: 448px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 15.5% !important;
 		width: 75% !important;
 		height: 30vh;
@@ -1103,7 +1072,6 @@
 @media (max-width: 440px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 16% !important;
 		width: 76% !important;
 		height: 30vh;
@@ -1113,7 +1081,6 @@
 @media (max-width: 435px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 18.5% !important;
 		width: 77% !important;
 		height: 30vh;
@@ -1128,7 +1095,6 @@
 @media (max-width: 425px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 17.5% !important;
 		width: 78% !important;
 		height: 30vh;
@@ -1138,7 +1104,6 @@
 @media (max-width: 420px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 20% !important;
 		width: 80% !important;
 		height: 30vh;
@@ -1152,7 +1117,6 @@
 @media (max-width: 408px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 19% !important;
 		width: 82% !important;
 		height: 30vh;
@@ -1162,7 +1126,6 @@
 @media (max-width: 400px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 18% !important;
 		width: 80% !important;
 		height: 30vh;
@@ -1181,7 +1144,6 @@
 @media (max-width: 390px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 17% !important;
 		width: 82% !important;
 		height: 30vh;
@@ -1190,7 +1152,6 @@
 @media (max-width: 380px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 16% !important;
 		width: 84% !important;
 		height: 30vh;
@@ -1200,7 +1161,6 @@
 @media (max-width: 375px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 16% !important;
 		width: 85% !important;
 		height: 30vh;
@@ -1210,7 +1170,6 @@
 @media (max-width: 370px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 16% !important;
 		width: 86% !important;
 		height: 30vh;
@@ -1225,7 +1184,6 @@
 @media (max-width: 365px) {
 	.swiper {
 		position: absolute;
-		/* padding-top: 5rem; */
 		left: 16% !important;
 		width: 87% !important;
 		height: 30vh;
